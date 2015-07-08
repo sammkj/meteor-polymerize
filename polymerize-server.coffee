@@ -266,7 +266,7 @@ class Polymerizer
     links = ''
     
     _.each htmlImports, (htmlImport) ->
-      links += '<link rel="import" href="bower_components/' + htmlImport.directory + '/' + htmlImport.file + '">'
+      links += '<link rel="import" href="/bower_components/' + htmlImport.directory + '/' + htmlImport.file + '">'
 
     _.each @assets, (asset) ->
       links += '<link rel="import" href="packages/loneleeandroo_polymerize/' + asset.name + '.html">'  
